@@ -40,7 +40,7 @@ function Osd(props) {
   }, []);
 
   if (props.init) {
-    window.osd.viewport.zoomSpring.animationTime = audioEl.duration-10;
+    window.osd.viewport.zoomSpring.animationTime = audioEl.duration+10;
     window.osd.viewport.goHome();      
   }
 
