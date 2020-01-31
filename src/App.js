@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Osd from './components/Osd';
+import AudioPlayer from './components/AudioPlayer';
 import './App.css';
 
 function App() {
+  const totalTracks = 2;
+  const [ordinal, setOrdinal] = useState(0);
+  const [audioEl, setAudioEl] = useState(null);
+  const [osdInstance, setOsdInstance] = useState({});
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Osd
+        ordinal={ordinal}
+        audioEl={audioEl}
+        osdInstance={osdInstance}
+        setOsdInstance={setOsdInstance}
+      />
+      <AudioPlayer 
+        ordinal={ordinal}
+        audioEl={audioEl}
+        setOrdinal={setOrdinal}
+        setAudioEl={setAudioEl}
+        totalTracks={totalTracks}
+      />
     </div>
   );
 }
