@@ -28,9 +28,14 @@ function Osd(props) {
   }, [osdInstance, ordinal]);
 
   useEffect(() => {
-    if (audioEl) {
-      audioEl.play();
+    async function play() {
+      if (audioEl) {
+        audioEl.pause();
+        audioEl.src=`${window.location.origin}/assets/audio/${props.ordinal}.mp3`;
+        await audioEl.play()
+      }
     }
+    play();
   }, [ordinal, audioEl])
 
   return (

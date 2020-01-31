@@ -24,7 +24,7 @@ function AudioPlayer(props) {
         else {
           setOrdinal(0);
         }
-      }      
+      }
     }
   }, [totalTracks, audioEl, ordinal, setOrdinal]);
 
