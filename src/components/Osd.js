@@ -7,7 +7,8 @@ function Osd(props) {
     setOsdInstance,
     ordinal,
     audioEl,
-    osdInstance
+    osdInstance,
+    init,
   } = props;
   
   useEffect(() => {
@@ -16,27 +17,31 @@ function Osd(props) {
       showZoomControl: false,
       showFullPageControl: false,
       showNavigationControl: false,
+      tileSources: [
+        `${window.location.origin}/assets/images/0.json`,
+        `${window.location.origin}/assets/images/1.json`
+      ]
     });
     setOsdInstance(window.osd);
-  }, [setOsdInstance, ordinal]);
+  }, [setOsdInstance]);
 
   useEffect(() => {
-    console.log(osdInstance);
     if (osdInstance.viewport) {
-      osdInstance.open(`${window.location.origin}/assets/images/${ordinal}.json`);
+      console.log('ordinal updated: change image to ' + ordinal);
+      osdInstance.goToPage(ordinal);
     }
   }, [osdInstance, ordinal]);
 
   useEffect(() => {
     async function play() {
-      if (audioEl) {
+      if (audioEl && init) {
         audioEl.pause();
-        audioEl.src=`${window.location.origin}/assets/audio/${props.ordinal}.mp3`;
+        audioEl.src=`${window.location.origin}/assets/audio/${ordinal}.mp3`;
         await audioEl.play()
       }
     }
     play();
-  }, [ordinal, audioEl])
+  }, [init, ordinal, audioEl])
 
   return (
     <div id="viewer">
