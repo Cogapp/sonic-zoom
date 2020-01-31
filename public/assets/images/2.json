@@ -1,0 +1,17 @@
+{
+   "@context" : "http://iiif.io/api/image/2/context.json",
+   "@id" : "http://ec2-34-249-198-181.eu-west-1.compute.amazonaws.com/iiif//s3-zooms/241/206/1982_0964_0001__0004_.ptif",
+   "protocol" : "http://iiif.io/api/image",
+   "width" : 4696,
+   "height" : 3772,
+   "tiles" : [
+      { "width" : 256, "height" : 256, "scaleFactors" : [ 1, 2, 4, 8 ] }
+   ],
+   "profile" : [
+      "http://iiif.io/api/image/2/level1.json",
+      { "formats" : [ "jpg" ],
+        "qualities" : [ "native","color","gray","bitonal" ],
+        "supports" : ["regionByPct","regionSquare","sizeByForcedWh","sizeByWh","sizeAboveFull","rotationBy90s","mirroring"]
+      }
+   ]
+ }

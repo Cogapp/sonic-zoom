@@ -37,8 +37,14 @@
   }
 }
 
-
 #viewer {
   width: 100vw;
   height: 100vh;
+}
+
+.initButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9000;
 }

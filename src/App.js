@@ -5,7 +5,7 @@ import Initiator from './components/Initiator';
 import './App.css';
 
 function App() {
-  const totalTracks = 2;
+  const totalTracks = 3;
   const [ordinal, setOrdinal] = useState(0);
   const [audioEl, setAudioEl] = useState(null);
   const [osdInstance, setOsdInstance] = useState({});
