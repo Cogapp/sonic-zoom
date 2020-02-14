@@ -10,6 +10,14 @@ function Osd(props) {
     osdInstance,
     init,
   } = props;
+  const gestureSettings = {
+    scrollToZoom: false,
+    clickToZoom: false,
+    dblClickToZoom: false,
+    pinchToZoom: false,
+    pinchRotate: false,
+    flickEnabled: false
+  };
   
   useEffect(() => {
     window.osd = OpenSeadragon({
@@ -17,11 +25,19 @@ function Osd(props) {
       showZoomControl: false,
       showFullPageControl: false,
       showNavigationControl: false,
+      showSequenceControl: false,
+      showRotationControl: false,
+      gestureSettingsMouse: gestureSettings,
+      gestureSettingsTouch: gestureSettings,
+      gestureSettingsPen: gestureSettings,
+      gestureSettingsUnknown: gestureSettings,
+      panHorizontal: false,
+      panVertical: false,
       tileSources: [
         `${window.location.origin}/assets/images/0.json`,
         `${window.location.origin}/assets/images/1.json`,
         `${window.location.origin}/assets/images/2.json`,
-      ]
+      ],
     });
     window.osd.addHandler('open', function() {
       // Set to max zoom center
