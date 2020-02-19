@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b8a4d0fd6c49677e4cf1c7328dd55bf",
+    "revision": "90de38099dfc277ff60d71c66f5d9494",
     "url": "/sonic-zoom/index.html"
   },
   {
-    "revision": "d877a472b179fd4efb63",
+    "revision": "cd906d8aac1d6f42b24f",
     "url": "/sonic-zoom/static/css/main.b6764114.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sonic-zoom/static/js/2.ddc7d446.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d877a472b179fd4efb63",
-    "url": "/sonic-zoom/static/js/main.b8e3f597.chunk.js"
+    "revision": "cd906d8aac1d6f42b24f",
+    "url": "/sonic-zoom/static/js/main.2facef95.chunk.js"
   },
   {
     "revision": "f8b6df57584d394f1fcf",
