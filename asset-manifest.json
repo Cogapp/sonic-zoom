@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sonic-zoom/static/css/main.b6764114.chunk.css",
-    "main.js": "/sonic-zoom/static/js/main.2facef95.chunk.js",
-    "main.js.map": "/sonic-zoom/static/js/main.2facef95.chunk.js.map",
+    "main.js": "/sonic-zoom/static/js/main.e386314a.chunk.js",
+    "main.js.map": "/sonic-zoom/static/js/main.e386314a.chunk.js.map",
     "runtime-main.js": "/sonic-zoom/static/js/runtime-main.176e0938.js",
     "runtime-main.js.map": "/sonic-zoom/static/js/runtime-main.176e0938.js.map",
     "static/js/2.ddc7d446.chunk.js": "/sonic-zoom/static/js/2.ddc7d446.chunk.js",
     "static/js/2.ddc7d446.chunk.js.map": "/sonic-zoom/static/js/2.ddc7d446.chunk.js.map",
     "index.html": "/sonic-zoom/index.html",
-    "precache-manifest.5146bab988ae56f02ad56d7f054f5f25.js": "/sonic-zoom/precache-manifest.5146bab988ae56f02ad56d7f054f5f25.js",
+    "precache-manifest.b99aef2abb19b7adf2401909b078b470.js": "/sonic-zoom/precache-manifest.b99aef2abb19b7adf2401909b078b470.js",
     "service-worker.js": "/sonic-zoom/service-worker.js",
     "static/css/main.b6764114.chunk.css.map": "/sonic-zoom/static/css/main.b6764114.chunk.css.map",
     "static/js/2.ddc7d446.chunk.js.LICENSE.txt": "/sonic-zoom/static/js/2.ddc7d446.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.176e0938.js",
     "static/js/2.ddc7d446.chunk.js",
     "static/css/main.b6764114.chunk.css",
-    "static/js/main.2facef95.chunk.js"
+    "static/js/main.e386314a.chunk.js"
   ]
 }

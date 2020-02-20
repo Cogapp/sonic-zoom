@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sonic-zoom/precache-manifest.5146bab988ae56f02ad56d7f054f5f25.js"
+  "/sonic-zoom/precache-manifest.b99aef2abb19b7adf2401909b078b470.js"
 );
 
 self.addEventListener('message', (event) => {
